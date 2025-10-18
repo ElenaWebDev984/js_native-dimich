@@ -63,3 +63,6 @@ const devs4 = people.map(man => ({
 
 const messages = people.map(man => `Hello ${man.name.split(' ')[0]}. Welcome to IT-Incubator`)
 
+export const createGreatingMessage = (people: ManType[]) => {
+    return people.map(man => `Hello ${man.name.split(' ')[0]}. Welcome to IT-Incubator`)
+}

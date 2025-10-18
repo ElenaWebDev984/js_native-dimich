@@ -1,4 +1,4 @@
-import type {ManType} from "./05.ts";
+import {createGreatingMessage, type ManType} from "./05.ts";
 import {beforeEach, expect, test} from "vitest";
 
 let people: ManType[] = []
@@ -13,7 +13,7 @@ beforeEach( () => {
 
 test('should get array of greating messages', () => {
 
-    const messages = people.map(man => `Hello ${man.name.split(' ')[0]}. Welcome to IT-Incubator`)
+    const messages = createGreatingMessage(people)
 
     expect(messages.length).toBe(3)
     expect(messages[0]).toBe('Hello Andrew. Welcome to IT-Incubator')
