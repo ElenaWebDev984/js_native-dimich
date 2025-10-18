@@ -82,16 +82,6 @@ test('Budget should be changed for FIRE-STATION', () => {
 })
 
 
-// 01. дополните тип HouseType (добавьте порядковый id от 1 и по возрастанию
-// 02. создайте в том же файле еще одну функцию, чтобы тесты прошли
-// test.skip('Houses should be destroyed', () => {
-//     demolishHouseOnTheStreet(city, 'Happy street');
-//
-//     expect(city.houses.length).toBe(1)
-//     expect(city.houses[0].id).toBe(1)
-// })
-
-
 // 01. создайте в том же файле еще одну функцию, чтобы тесты прошли
 test('House should be repaired', () => {
     repairHouse(city.houses[1])
