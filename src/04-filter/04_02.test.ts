@@ -81,7 +81,7 @@ test('Houses should be destroyed', () => {
 
 // 01. создайте в том же файле еще одну функцию, чтобы тесты прошли
 test('get buildings with correct staff count', () => {
-    let buildings = getBuildingsWithStaffCountGreaterThen(city.governmentBuildings, 500)
+    const buildings = getBuildingsWithStaffCountGreaterThen(city.governmentBuildings, 500)
 
     expect(buildings.length).toBe(1)
     expect(buildings[0].type).toBe('FIRE-STATION')
