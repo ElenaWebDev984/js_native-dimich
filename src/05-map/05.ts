@@ -34,6 +34,7 @@ const devs = [
         lastName: 'Sidorov',
     },
 ]
+console.log(devs)
 
 
 
@@ -59,6 +60,10 @@ const devs4 = people.map(man => ({
     lastName: man.name.split(' ')[1],
 }))
 
+console.log(devs2)
+console.log(devs3)
+console.log(devs4)
+
 
 
 const messages = people.map(man => `Hello ${man.name.split(' ')[0]}. Welcome to IT-Incubator`)
@@ -66,3 +71,5 @@ const messages = people.map(man => `Hello ${man.name.split(' ')[0]}. Welcome to 
 export const createGreatingMessage = (people: ManType[]) => {
     return people.map(man => `Hello ${man.name.split(' ')[0]}. Welcome to IT-Incubator`)
 }
+
+console.log(messages)
