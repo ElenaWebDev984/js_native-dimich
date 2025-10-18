@@ -1,3 +1,5 @@
+import type { CityType, GovernmentBuildingType, HouseType} from "../02-objects/02_02"
+
 const ages = [18, 20, 22, 1, 100, 90, 14]
 
 const predicate = (age: number) => {
@@ -27,3 +29,13 @@ const cheapCourses = [
     {title: 'CSS', price: 110},
     {title: 'REACT', price: 150},
 ]
+
+
+export function demolishHouseOnTheStreet(city: CityType, street: string) {
+    city.houses = city.houses.filter(h => h.address.street.title !== street)
+}
+
+
+export const getBuildingsWithStaffCountGreaterThen = (buildings: GovernmentBuildingType[], staffCount: number) => {
+    return buildings.filter(b => b.staffCount > staffCount)
+}
