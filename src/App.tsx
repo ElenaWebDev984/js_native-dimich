@@ -1,5 +1,7 @@
 
 import './App.css'
+import {User} from "./06-callback_onClick_onChange_onBlur/06.tsx";
+
 
 function App() {
     const names = ['Dimich', 'Sveta', 'Katya', 'Victor', 'Ignat']
@@ -16,6 +18,8 @@ function App() {
 
   return (
      <div className='app'>
+         <User/>
+
         <ul>
             {mappedNames}
             {mappedUsers}
