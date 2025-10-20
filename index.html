@@ -8,27 +8,7 @@
   </head>
   <body>
     <div id="root"></div>
-    <hr>
-    <button id="btn1">1</button>
-    <button id="btn2">2</button>
 
-<!--    <script type="module" src="/src/main.tsx">-->
-    <script>
-
-        const deleteUser = () => {
-            alert("I am a bad global function")
-        }
-
-        const deleteUserHandler = () => {
-            alert('2')
-        }
-
-        const btn = document.getElementById('btn1')
-        btn.onclick = deleteUser
-
-        const btn2 = document.getElementById('btn2')
-        btn2.addEventListener('click', deleteUserHandler)
-
-    </script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
