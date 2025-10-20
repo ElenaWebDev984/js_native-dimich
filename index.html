@@ -8,6 +8,19 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <hr>
+    <button id="btn1">1</button>
+    <button id="btn2">2</button>
+
+    <script>
+
+        const deleteUser = () => {
+            alert('I am a bad global function')
+        }
+
+        const btn = document.getElementById('btn1')
+        btn.onclick = deleteUser
+
+    </script>
   </body>
 </html>
